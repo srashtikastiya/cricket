@@ -42,9 +42,9 @@
                 <td>{{ $value->hundreds }}</td>
                 <td>{{ $value->fifties }}</td>
                 <td>@if($value->total_wickets =='')<b>-</b>@else{{ $value->total_wickets }}@endif</td>
-                <td>{{ $value->bowl_avg }}</td>
+                <td>@if($value->bowl_avg =='')<b>-</b>@else{{ $value->bowl_avg }}@endif</td>
                 <td>@if($value->econ =='')<b>-</b>@else{{ $value->econ }}@endif</td>
-                <td>{{ $value->bowl_strike }}</td>
+                <td>@if($value->bowl_strike =='')<b>-</b>@else{{ $value->bowl_strike }}@endif</td>
                 
              </tr>
         
