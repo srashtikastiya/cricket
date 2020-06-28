@@ -7,6 +7,12 @@ use App\Teams;
 use Illuminate\Http\Request;
 use DataTables;
 
+ /**
+     * Display a listing of the Playes.
+     *
+     * @return \Illuminate\Http\Response
+     */
+
 class PlayersController extends Controller
 {
    public function index($id)
@@ -16,7 +22,6 @@ class PlayersController extends Controller
         $data = Players::orderBy('id', 'asc')->where('team_id', $id)->with(['teams'])->get();
   
         $team_name = $data[0]->teams->name;
-       
 
         return view('player',["players"=>$data,"team_name"=>$team_name]);
         

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<h1 style="text-align:center;">Teams</h1>
 
    <table id="datatable" class="table table-striped table-bordered" style="width:100%">
         <thead>
