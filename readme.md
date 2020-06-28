@@ -6,7 +6,7 @@ This Project is a simple cricket applicaion which shows the current tournament s
 
 3. Import sql file from sqls/cricket.sql in phpmyadmin
 
-4. if composer is not installed in you system,Install composer by following the instructions from https://getcomposer.org/doc/00-intro.md
+4. If composer is not installed in you system,Install composer by following the instructions from https://getcomposer.org/doc/00-intro.md
 
 5. Update the Composer by running following command at Project root folder: composer update
 
